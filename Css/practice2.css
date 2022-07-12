@@ -1,0 +1,40 @@
+body {
+    background-color: bisque;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.large__box {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    background-color: aquamarine;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50% , -50%);
+}
+
+.small__box {
+    height: 100px;
+    width: 100px;
+    border: 5px solid white;
+    margin: 15px;
+}
+
+.small__box:nth-child(1) {
+    background-color: brown;
+}
+.small__box:nth-child(2) {
+    background-color: blue;
+    width: 300px;
+    border: 5px dotted white;
+}
+.small__box:nth-child(3) {
+    background-color:gray;
+}
