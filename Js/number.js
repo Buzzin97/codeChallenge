@@ -1,23 +1,31 @@
+// 변수 선언 html에서 태그 가져오기!
 const mainForm = document.querySelector("#mainForm")
-const inputNumber = document.querySelector("#inputNumber");
-const outputNumber = document.querySelector("#outputNumber");
+const win = document.querySelector("#win");
+const lose = document.querySelector("#lose");
 
-function handleInputNumber() {
-    const input = inputNumber.value;
-    chooseInput.setAttribute("max", input);
-
-
-function handleSubmit(event) {
+function handlemainForm(event) {
     event.preventDefault();
-    const input = inputNumber.value;
-    const choose = chooseInput.value;
-    const random = Math.floor(Math.random() * input * 1);
-    paintResult(choose, random)
-}   
-    mainForm.addEventListener("input", handleInputNumber);
-    chooseForm.addEventListener("submit" , handleSubmit);
+    
+    const inputNumber = document.querySelector("#inputNumber");
+    const outputNumber = document.querySelector("#outputNumber");
+    //입력값
+    const inputNum = inputNumber.value;
+    const inputNumInt = Number(inputNum);
+    //추측값
+    const outpuNum = outputNumber.value;    
+    const outputNumInt = Number(outpuNum);   
+    //랜덤 숫자 송출기 (machine chose)
+    const randomNumber = Math.ceil(Math.random()* inputNum);
 
+    if (inputNumInt === randomNumber) {
+        win.innerHTML = `You chose : ${inputNumInt}. machine chose : ${randomNumber}. <br> You win !`; 
+        lose.innerHTML = " "
+    } else if (inputNumInt !== randomNumber) {
+        lose.innerHTML = `You chose : ${inputNumInt}. the machine chose : ${randomNumber}.<br> You lose!`;
+        win.innerHTML = "";
+      } else if (inputNumInt > outputNumInt) {
+        alert("Wrong number!");
+      }
+}
 
-    if (parseInt(choose > random)) {
-        piantRes.innerText =`you chose: ${choose} the machine chose`
-    }
+mainForm.addEventListener("submit", handlemainForm);

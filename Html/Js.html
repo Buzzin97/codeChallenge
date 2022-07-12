@@ -9,13 +9,19 @@
 <body>
     <h1>Random Number Game</h1>
     <form id="mainForm">
-        <strong>Generate a number between 0 and</strong> 
-        <input id="inputNumber" type="number" > <br/>
-        <div style="margin-top: 15px;">Guess the number
-            <input id ="outputNumber"type="number">
-            <button id="eventNumber">play!</button>
-        </div>
+        <h2>Generate a number between 0 and
+        <input id="inputNumber" type="number" >
+        </h2>
+        <h3>Guess the number :
+            <input id ="outputNumber"type="number" min="0">
+            <input type="submit" value="play!" />
+        </h3>
     </form>
+
+    <div id="result">
+        <span id="win"></span>
+        <span id="lose"></span>
+    </div>
     
     
     <script src="../Js/number.js"></script>
