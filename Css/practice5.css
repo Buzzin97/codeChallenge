@@ -14,18 +14,15 @@ h1, h2, h3, h4, h5, h6, p {overflow-wrap:break-word}
 #__next, #root {isolation:isolate}
 
 body {
-    display: flex;
-    justify-content: center;
     height: 100vh;
     width: 100vw;
     border: 8px solid mediumaquamarine;
 }
 
 .status {
-    width: 50%;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    margin-left: 30px;
 }
 
 .status__icon {
@@ -36,4 +33,36 @@ body {
 .status__text {
     font-size: 20px;
     font-weight: 500;
+}
+
+.main-Music--lg {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.main-Music--lg__column:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.main-Music--lg__column__img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 12%;
+}
+
+.main-Music--lg__column__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.main-Music--lg__column__text > h6 {
+    font-weight: 300;
+    font-size: 20px;
+    opacity: 0.5;
 }
