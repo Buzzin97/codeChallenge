@@ -106,7 +106,26 @@ body {
     display: flex;
 }
 
-.main-Music__column:first-child {
+.main-Music__column:first-child ,
+.main-Music__column {
     display: flex;
     align-items: center;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.main-Music__column__text {
+    margin-left: 15px;
+}
+
+.main-Music__column__text > h6 {
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+.color1 {
+    background-color: burlywood;
+}
+.color2 {
+    background-color: plum;
 }
