@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/number.css">
     <title>자바 스크립트 코드챌린지</title>
 </head>
 <body>
-    <h1>Random Number Game</h1>
+    <h1>숫자 맞추기 게임</h1>
     <form id="mainForm">
-        <h2>Generate a number between 0 and
+        <h2>최대숫자를 입력해주세요!!
         <input id="inputNumber" type="number" >
         </h2>
-        <h3>Guess the number :
-            <input id ="outputNumber"type="number" min="0">
-            <input type="submit" value="play!" />
+        <h3>예상 숫자를 입력하세요!!
+            <input id ="outputNumber"type="number" min="0"><br>
+            <input type="submit" value="play!" class="btn"/>
         </h3>
+        <div id="result">
+            <span id="win"></span><br>
+            <span id="lose"></span>
+        </div>
+        
     </form>
 
-    <div id="result">
-        <span id="win"></span>
-        <span id="lose"></span>
-    </div>
-    
     
     <script src="../Js/number.js"></script>
 </body>

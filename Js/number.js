@@ -18,10 +18,10 @@ function handlemainForm(event) {
     const randomNumber = Math.ceil(Math.random()* inputNum);
 
     if (inputNumInt === randomNumber) {
-        win.innerHTML = `You chose : ${inputNumInt}. machine chose : ${randomNumber}. <br> You win !`; 
+        win.innerHTML = `입력 숫자 : ${inputNumInt}. 정답 숫자 : ${randomNumber}. <br> 예측 성공!!`; 
         lose.innerHTML = " "
     } else if (inputNumInt !== randomNumber) {
-        lose.innerHTML = `You chose : ${inputNumInt}. the machine chose : ${randomNumber}.<br> You lose!`;
+        lose.innerHTML = `입력 숫자 : ${inputNumInt}. 정답 숫자 : ${randomNumber}.<br> 예측 실패!!`;
         win.innerHTML = "";
       } else if (inputNumInt > outputNumInt) {
         alert("Wrong number!");
