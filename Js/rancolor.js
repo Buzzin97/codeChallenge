@@ -19,7 +19,7 @@ const colors = [
     "#ff3f34"
   ];
 
-const btn = document.querySelector("btn");
+const btn = document.querySelector("#btn");
 
 function changeColor() {
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
