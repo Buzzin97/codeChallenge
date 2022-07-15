@@ -103,3 +103,18 @@ section {
     font-weight: 400;
     opacity: 0.4;
 }
+
+.wrap1Btn {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap1Btn > button {
+        margin: 30px 25px 25px 25px;
+        background-color: #aaf0d1;
+        height: 40px;
+        width: 120px;
+        border-radius: 30px;
+        border: none;
+}
+
