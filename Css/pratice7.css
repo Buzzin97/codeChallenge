@@ -194,10 +194,15 @@ section {
     font-size: 25px;
 }
 
+ul {
+    width:40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .current__icons {
     display: flex;
-   flex-direction: row;
-   justify-content: center;
 }
 
 .current__icon {
@@ -234,7 +239,7 @@ section {
 .song-slider{
     margin: auto;
     margin-top: 20px;
-    width: 300px;
+    width: 80%;
     position: relative;
 }
 
@@ -301,3 +306,32 @@ section {
     left: 55%;
     transform-origin: center;
 }
+
+.play-btn.pause span:nth-child(2){
+    transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn.pause{
+    animation: pulse 2s linear infinite;
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background: #d5eebb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
