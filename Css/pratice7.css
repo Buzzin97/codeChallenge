@@ -215,5 +215,18 @@ section {
 
 .mainText {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainText__big {
+    font-size: 21px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.mainText__sub {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
