@@ -1,37 +1,68 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
 body {
-  height: 500vh;
+  background-color:#DDE1D4;
 }
 
 .grid {
+  padding: 15px;
+  height: 100vh;
+  max-width: 650px;
+  margin:0 auto;
+  width: 100%;
   display: grid;
-  background-color: whitesmoke;
-  grid-template-rows: 75px 100px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: 8% 45% 35%;
+  gap: 15px;
   grid-template-areas: 
   "header header header "
-  "bad bad bad-next"
   "bad bad bad-next"
   "religion religion religion"
   ;
 }
 
 .header {
-  background-color: black;
+  background-color: rgb(15, 160, 223);
   grid-area: header;
+  color: whitesmoke; 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+  border: 2px solid whitesmoke;
 }
 
 .bad {
-  background-color: red;
+  background-color: rgb(94, 26, 183);
   grid-area: bad;
+  display: flex;
+  align-items: flex-end;
+  color: whitesmoke;
+  border-radius: 30px;
+  font-size: 200px;
+
 }
 
 .bad-next {
-  background-color: red;
+  background-color: rgb(94, 26, 183);
+  border-radius: 30px;
   grid-area: bad-next;
 }
 
 .religion {
-  background-color: red;
+  background-color: rgb(94, 26, 183);
+  border-radius: 30px;
   grid-area: religion;
+}
+
+.religion h2 {
+  font-size: 215px;
+  color: azure;
+  text-align: center;
+}
+
+.religion li {
+  color: white;
+  font-size: 30px;
+  margin: 8px;
 }
