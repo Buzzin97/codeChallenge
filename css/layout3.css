@@ -1,28 +1,64 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
- body {
-  display: grid;
-  margin: 100px auto;
-  width: 450px;
-  height: 450px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns:repeat(2, 1fr);
- }
+  body {
+    display: grid;
+    margin: 100px auto;
+    width: 880px;
+    height: 440px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:repeat(2, 1fr);
+  }
 
- div {
-   background-color: aqua;
-   height: 220px;
-   width: 220px;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 440px;
+    font-size: 40px;
   }
   
+  div:nth-child(1){
+    background-color: antiquewhite;
+    color: brown;
+  }
+  div:nth-child(2){
+    background-color: aquamarine;
+    color: yellowgreen;
+  }
+  div:nth-child(3){
+    background-color: aqua;
+    color: crimson;
+  }
+
   div:nth-child(4){
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns:repeat(2, 1fr);
   }
 
+
+
   span {
-    background-color: aquamarine;
-    height: 30px;
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    margin: auto;
+    height: 110px;
+    width: 220px;
+    font-size: 15px;
+  }
+
+  span:nth-child(1){
+    background-color: black;
+  }
+  span:nth-child(2){
+    background-color: blue;
+  }
+  span:nth-child(3){
+    background-color: violet;
+  }
+  span:nth-child(4){
+    background-color: red;
   }
