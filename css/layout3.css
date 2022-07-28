@@ -1,0 +1,28 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+ body {
+  display: grid;
+  margin: 100px auto;
+  width: 450px;
+  height: 450px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns:repeat(2, 1fr);
+ }
+
+ div {
+   background-color: aqua;
+   height: 220px;
+   width: 220px;
+  }
+  
+  div:nth-child(4){
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns:repeat(2, 1fr);
+  }
+
+  span {
+    background-color: aquamarine;
+    height: 30px;
+    width: 30px;
+  }
