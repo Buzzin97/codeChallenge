@@ -1,8 +1,15 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  height: 100vh;
+  margin: auto;
+}
+
 .wrapper {
   background-color: black;
-  margin: auto;
-  width: 984px;
-  height: 656px;
+  margin: 60px auto;
+  width: 990px;
+  height: 660px;
   display: flex;
   justify-content:center;
 }
@@ -24,4 +31,54 @@ section {
   display: grid;
   grid-template-columns: repeat(4, 190px);
   grid-template-rows: repeat(3, 175px);
+  grid-template-areas: 
+  "b blu w wsh" 
+  "r ws w wsh" 
+  "r y w wsh" 
 }
+
+section >div {
+  font-size: 20px;
+}
+
+div > ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.black {
+  grid-area: b;
+  background-color: black;
+  color: aliceblue;
+}
+
+.red {
+  grid-area: r;
+  background-color: #ff1603;
+}
+
+.blue {
+  grid-area: blu;
+  background-color: #6C01ff;
+}
+
+.yellow {
+  grid-area: y;
+  background-color: #ffca04
+}
+
+.white {
+  grid-area: w;
+  background-color: white;
+}
+
+.ws{
+  grid-area: ws;
+  background-color: white;
+}
+
+.wsh {
+  grid-area: wsh;
+  background-color: white;
+}
+
