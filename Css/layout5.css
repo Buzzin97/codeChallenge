@@ -5,6 +5,10 @@ body {
   margin: auto;
 }
 
+li {
+  line-height: 1.3;
+}
+
 .wrapper {
   background-color: black;
   margin: 60px auto;
@@ -75,10 +79,27 @@ div > ul {
 .ws{
   grid-area: ws;
   background-color: white;
+
 }
 
 .wsh {
   grid-area: wsh;
   background-color: white;
 }
+
+.white .wsh {
+  padding: 10px;
+}
+
+.white>ul>li:first-child,
+.wsh>ul>li:first-child {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.white>ul>li:nth-child(5){
+  display: inline;
+  background-color: #6C01ff;
+}
+
 
