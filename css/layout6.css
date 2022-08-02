@@ -73,6 +73,11 @@ article {
   box-sizing: border-box;
   background-color: white;
   border-right: 4px solid #ff693a;
+  padding-left: 4px;
+  color: #ff693a;
+  writing-mode: vertical-lr;
+  text-align: center;
+  text-orientation: sideways-right;
 }
 
 footer {
