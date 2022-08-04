@@ -11,9 +11,44 @@ header {
 }
 .nav {
   border-collapse: collapse;
-  border: 2px  solid black;
+  border: 1px  solid black;
   display: flex;
   padding: 10px;
   justify-content: space-between;
   align-items: center;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid black;
+}
+
+.box {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+span {
+  display: block;
+}
+
+
+.box_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_bottom > span:last-child {
+  text-decoration: underline;
 }
