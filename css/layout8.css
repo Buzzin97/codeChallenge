@@ -141,8 +141,9 @@ a {
     box-sizing: border-box;
 }
 .orange {
-    background-color: orange;
+    background-color: #ff7400;
     padding: 16px;
+    color: #ff0300;
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
@@ -153,7 +154,7 @@ a {
     display: grid;
     -ms-grid-columns: 40px 7fr 3fr;
     grid-template-columns: 40px 7fr 3fr;
-    border: 1px solid #000;
+    border: 1px solid #ff0300;
     margin-bottom: -1px;
 }
 .orange section:hover {
@@ -186,7 +187,7 @@ a {
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content;
-    border: 1px solid #000;
+    border: 1px solid #ff0300;
     border-top: none;
     border-bottom: none;
     display: flex;
@@ -205,7 +206,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #ff0300;
 }
 .orange section div:nth-child(3) button {
     -ms-grid-column-align: center;
@@ -229,7 +230,7 @@ a {
 }
 .bluepink div:first-child {
     height: 100%;
-    background-color: #db7093;
+    background-color: #ff00ff;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -241,7 +242,7 @@ a {
 }
 .bluepink div:last-child {
     height: 100%;
-    background-color: #8a2be2;
+    background-color: #1900FF;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
@@ -267,7 +268,7 @@ a {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #5f9ea0;
+    background-color: #ff0300;
     display: -ms-grid;
     display: grid;
     gap: 20px;
