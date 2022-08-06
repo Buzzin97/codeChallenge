@@ -1,0 +1,361 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 100px 3fr;
+    grid-template-columns: 6fr 100px 3fr;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input:focus {
+    outline: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+.orange {
+    background-color: orange;
+    padding: 16px;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+}
+.orange section {
+    height: 150px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40px 7fr 3fr;
+    grid-template-columns: 40px 7fr 3fr;
+    border: 1px solid #000;
+    margin-bottom: -1px;
+}
+.orange section:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.orange section:hover div:nth-child(2) {
+    border: 1px solid #fff;
+    border-top: none;
+    border-bottom: none;
+}
+.orange section:hover div:nth-child(3) span {
+    border-bottom: 1px solid #fff;
+}
+.orange section:hover div:nth-child(3) button {
+    background-color: #fff;
+    color: #000;
+}
+.orange section > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding: 10px;
+}
+.orange section div:nth-child(2) {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 600;
+    padding: 0 20px;
+}
+.orange section div:nth-child(3) {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.orange section div:nth-child(3) span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+}
+.orange section div:nth-child(3) button {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    height: 70%;
+    width: 80%;
+    border-radius: 50px;
+}
+.bluepink {
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.bluepink div:first-child {
+    height: 100%;
+    background-color: #db7093;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+}
+.bluepink div:last-child {
+    height: 100%;
+    background-color: #8a2be2;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px;
+    font-size: 30px;
+    transform: rotate(180deg);
+}
+.bluepink i {
+    display: flex;
+    align-self: center;
+    font-size: 100px;
+    line-height: 0;
+    z-index: 99;
+}
+.red {
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #5f9ea0;
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 0.5fr 20px minmax(-webkit-min-content, 3fr) 20px minmax(-webkit-min-content, 3fr) 20px minmax(-webkit-min-content, 3fr) 20px minmax(-webkit-min-content, 3fr) 20px
+        minmax(-webkit-min-content, 3fr) 20px minmax(-webkit-min-content, 3fr);
+    -ms-grid-rows: 0.5fr 20px minmax(min-content, 3fr) 20px minmax(min-content, 3fr) 20px minmax(min-content, 3fr) 20px minmax(min-content, 3fr) 20px minmax(min-content, 3fr) 20px
+        minmax(min-content, 3fr);
+    grid-template-rows: 0.5fr repeat(6, minmax(-webkit-min-content, 3fr));
+    grid-template-rows: 0.5fr repeat(6, minmax(min-content, 3fr));
+    padding: 20px;
+    border-bottom: 1px solid #000;
+}
+.red > :nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.red > :nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+.red > :nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+.red > :nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+.red > :nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+.red > :nth-child(6) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+}
+.red > :nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
+.red > :nth-child(8) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 3;
+}
+.red > :nth-child(9) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+}
+.red > :nth-child(10) {
+    -ms-grid-row: 9;
+    -ms-grid-column: 3;
+}
+.red > :nth-child(11) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+}
+.red > :nth-child(12) {
+    -ms-grid-row: 11;
+    -ms-grid-column: 3;
+}
+.red > :nth-child(13) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 1;
+}
+.red > :nth-child(14) {
+    -ms-grid-row: 13;
+    -ms-grid-column: 3;
+}
+.red .head {
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+.red .head,
+.red .head > div {
+    display: flex;
+}
+.red .head i {
+    margin-right: 4px;
+}
+.red .content,
+.red .head {
+    border-bottom: 1px solid #000;
+}
+.red .content h2 {
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
